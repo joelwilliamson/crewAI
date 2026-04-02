@@ -10,6 +10,7 @@ from crewai.agent.core import Agent
 from crewai.agent.planning_config import PlanningConfig
 from crewai.crew import Crew
 from crewai.crews.crew_output import CrewOutput
+from crewai.execution_context import ExecutionContext
 from crewai.flow.flow import Flow
 from crewai.knowledge.knowledge import Knowledge
 from crewai.llm import LLM
@@ -44,7 +45,7 @@ def _suppress_pydantic_deprecation_warnings() -> None:
 
 _suppress_pydantic_deprecation_warnings()
 
-__version__ = "1.13.0a6"
+__version__ = "1.13.0a7"
 _telemetry_submitted = False
 
 
@@ -178,6 +179,7 @@ __all__ = [
     "BaseLLM",
     "Crew",
     "CrewOutput",
+    "ExecutionContext",
     "Flow",
     "Knowledge",
     "LLMGuardrail",
